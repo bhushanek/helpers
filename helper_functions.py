@@ -31,7 +31,7 @@ import tarfile
 
 def unzip_tar_file(filepath):
   # open file
-  file = tarfile.open('gfg.tar.gz')
+  file = tarfile.open(filepath)
   # extracting file
   file.extractall()
   file.close()
